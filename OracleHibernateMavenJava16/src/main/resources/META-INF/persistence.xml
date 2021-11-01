@@ -8,6 +8,9 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@3.86.149.170:1521:WILMA"/>
+                        
         	<property name="hibernate.hikari.username" value="stu" />
             <property name="hibernate.hikari.password" value="Circuit00" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect"/>
@@ -15,13 +18,10 @@
             <property name="hibernate.default_schema" value="stu"/>            
             <property name="show_sql" value="true"/>
             <property name="format_sql" value="true"/>
-            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@//ec2-3-86-149-170.compute-1.amazonaws.com:1521:WILMA"/>
-            <property name="hibernate.hikari.dataSource.url" value="jdbc:oracle:thin:@//ec2-3-86-149-170.compute-1.amazonaws.com:WILMA" />                      
             <property name="hibernate.connection.provider_class" value="org.hibernate.hikaricp.internal.HikariCPConnectionProvider" />
             <property name="hibernate.hikari.minimumIdle" value="20" />
             <property name="hibernate.hikari.maximumPoolSize" value="100" />
             <property name="hibernate.hikari.idleTimeout" value="30000" />
-            <property name="hibernate.hikari.dataSourceClassName" value="org.h2.jdbcx.JdbcDataSource" />
         </properties>
     </persistence-unit>
     
