@@ -34,6 +34,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/tstba/Lab5x/OracleHibernateMavenJava16/ojdbc10-19.3.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/appgibbonsbr/.m2/repository/oracle/ojdbc11/ojdbc11.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
