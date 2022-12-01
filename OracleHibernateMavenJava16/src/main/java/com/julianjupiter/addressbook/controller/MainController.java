@@ -32,7 +32,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class MainController implements Controller, Initializable {
-    @FXML
+    @FXML	
     private BorderPane headerBorderPane;
     private double xOffset = 0;
     private double yOffset = 0;

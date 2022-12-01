@@ -9,13 +9,13 @@
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@3.86.149.170:1521:WILMA"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@44.204.193.165:1521/FALL2022PDB"/>
                         
-        	<property name="hibernate.hikari.username" value="stu" />
-            <property name="hibernate.hikari.password" value="Circuit00" />
+        	<property name="hibernate.hikari.username" value="RENO" />
+            <property name="hibernate.hikari.password" value="RENO" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
-            <property name="hibernate.default_schema" value="stu"/>            
+            <property name="hibernate.default_schema" value="RENO"/>            
             <property name="show_sql" value="true"/>
             <property name="format_sql" value="true"/>
             <property name="hibernate.connection.provider_class" value="org.hibernate.hikaricp.internal.HikariCPConnectionProvider" />
