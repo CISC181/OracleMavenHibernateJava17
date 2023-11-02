@@ -70,13 +70,12 @@
 		<!-- https://mvnrepository.com/artifact/com.oracle.jdbc/ojdbc10 -->
 
 
-	<dependency>
-		<groupId>com.oracle</groupId>
-		<artifactId>ojdbc</artifactId>
-		<version>11</version>
-		<scope>system</scope>
-		<systemPath>C:/Users/appgibbonsbr/.m2/repository/oracle/ojdbc11/ojdbc11.jar</systemPath>
-	</dependency>
+<dependency>
+    <groupId>com.oracle.ojdbc</groupId>
+    <artifactId>ojdbc8</artifactId>
+    <version>19.3.0.0</version>
+</dependency>
+
 
 
 

@@ -9,7 +9,7 @@
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@44.204.193.165:1521/FALL2022PDB"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@34.202.234.254:1521/FALL2023PDB"/>
                         
         	<property name="hibernate.hikari.username" value="RENO" />
             <property name="hibernate.hikari.password" value="RENO" />
