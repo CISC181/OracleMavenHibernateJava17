@@ -22,7 +22,7 @@ class ContactRepositoryImpl implements ContactRepository {
     }
 
     @Override
-    public Optional<Contact> findById(Long id) {
+    public Optional<Contact> findById(Integer id) {
         var entityManager = this.entityManager();
 
         try {
@@ -61,7 +61,7 @@ class ContactRepositoryImpl implements ContactRepository {
     }
 
     @Override
-    public void deleteById(Long id) {
+    public void deleteById(Integer id) {
         var contactOptional = this.findById(id);
 
         contactOptional.ifPresent(contact -> {

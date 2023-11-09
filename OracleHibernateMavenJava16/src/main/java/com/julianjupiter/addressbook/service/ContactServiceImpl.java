@@ -23,7 +23,7 @@ public class ContactServiceImpl implements ContactService {
     }
 
     @Override
-    public Optional<ContactDto> findById(Long id) {
+    public Optional<ContactDto> findById(Integer id) {
         return this.contactRepository.findById(id)
                 .map(this.contactMapper::fromEntityToDto);
     }
@@ -42,7 +42,7 @@ public class ContactServiceImpl implements ContactService {
     }
 
     @Override
-    public void deleteById(Long id) {
+    public void deleteById(Integer id) {
         this.contactRepository.deleteById(id);
     }
 }

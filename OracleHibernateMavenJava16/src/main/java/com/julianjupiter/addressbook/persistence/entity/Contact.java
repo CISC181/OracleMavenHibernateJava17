@@ -4,14 +4,25 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+
 import java.time.OffsetDateTime;
 
 @Entity
 public class Contact {
+   // @Id
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE)
+    
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "book_generator")
+    @SequenceGenerator(name="book_generator", sequenceName = "book_seq", allocationSize=50)
+
+    
+    
+    private Integer  id;
     private String firstName;
+    private String middleName;
+    
     private String lastName;
     private String address;
     private String mobileNumber;
@@ -19,11 +30,11 @@ public class Contact {
     private OffsetDateTime createdAt;
     private OffsetDateTime updatedAt;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public Contact setId(Long id) {
+    public Contact setId(Integer id) {
         this.id = id;
         return this;
     }
@@ -36,8 +47,19 @@ public class Contact {
         this.firstName = firstName;
         return this;
     }
+    
+    
 
-    public String getLastName() {
+    public String getMiddleName() {
+		return middleName;
+	}
+
+	public Contact setMiddleName(String middleName) {
+		this.middleName = middleName;
+		return this;
+	}
+
+	public String getLastName() {
         return lastName;
     }
 

@@ -4,7 +4,7 @@ import com.julianjupiter.addressbook.persistence.entity.Contact;
 
 import java.util.List;
 
-public interface ContactRepository extends Repository<Contact, Long> {
+public interface ContactRepository extends Repository<Contact, Integer> {
 
     static ContactRepository create() {
         return new ContactRepositoryImpl();

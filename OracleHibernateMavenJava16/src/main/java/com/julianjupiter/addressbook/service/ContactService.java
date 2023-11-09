@@ -12,11 +12,11 @@ public interface ContactService {
 
     List<ContactDto> findAll();
 
-    Optional<ContactDto> findById(Long id);
+    Optional<ContactDto> findById(Integer id);
 
     List<ContactDto> findByFirstNameOrLastName(String name);
 
     ContactDto save(ContactDto contactDto);
 
-    void deleteById(Long id);
+    void deleteById(Integer id);
 }

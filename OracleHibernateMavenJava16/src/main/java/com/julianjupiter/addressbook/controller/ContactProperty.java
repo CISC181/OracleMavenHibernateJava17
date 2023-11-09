@@ -1,7 +1,9 @@
 package com.julianjupiter.addressbook.controller;
 
+import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.LongProperty;
 import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -12,7 +14,7 @@ import javax.validation.constraints.NotBlank;
 import java.time.OffsetDateTime;
 
 public class ContactProperty {
-    private LongProperty id;
+    private IntegerProperty id;
     private StringProperty lastName;
     private StringProperty firstName;
     private StringProperty address;
@@ -22,7 +24,7 @@ public class ContactProperty {
     private ObjectProperty<OffsetDateTime> updatedAt;
 
     public ContactProperty() {
-        this.id = new SimpleLongProperty();
+        this.id = new SimpleIntegerProperty();
         this.lastName = new SimpleStringProperty();
         this.firstName = new SimpleStringProperty();
         this.address = new SimpleStringProperty();
@@ -32,15 +34,15 @@ public class ContactProperty {
         this.updatedAt = new SimpleObjectProperty<>();
     }
 
-    public Long getId() {
+    public int getId() {
         return id.get();
     }
 
-    public LongProperty idProperty() {
+    public IntegerProperty idProperty() {
         return id;
     }
 
-    public ContactProperty setId(Long id) {
+    public ContactProperty setId(int id) {
         this.id.set(id);
         return this;
     }

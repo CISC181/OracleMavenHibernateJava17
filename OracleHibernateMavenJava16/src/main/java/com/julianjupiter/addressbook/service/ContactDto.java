@@ -3,8 +3,9 @@ package com.julianjupiter.addressbook.service;
 import java.time.OffsetDateTime;
 
 public class ContactDto {
-    private Long id;
+    private Integer id;
     private String firstName;
+    private String middleName;
     private String lastName;
     private String address;
     private String mobileNumber;
@@ -12,11 +13,11 @@ public class ContactDto {
     private OffsetDateTime createdAt;
     private OffsetDateTime updatedAt;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public ContactDto setId(Long id) {
+    public ContactDto setId(Integer id) {
         this.id = id;
         return this;
     }
@@ -30,7 +31,17 @@ public class ContactDto {
         return this;
     }
 
-    public String getLastName() {
+    
+    public String getMiddleName() {
+		return middleName;
+	}
+
+	public ContactDto setMiddleName(String middleName) {
+		this.middleName = middleName;
+		return this;
+	}
+
+	public String getLastName() {
         return lastName;
     }
 
